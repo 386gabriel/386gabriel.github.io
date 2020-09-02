@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        class MyComponent extends HTMLElement {
+            constructor(){
+                super();
+            }
+            connectedCallback() {
+                console.log("ok");
+            }
+        }
+        customElements.define('meu-componente', MyComponent);
+    </script>
+</body>
+
+</html>
